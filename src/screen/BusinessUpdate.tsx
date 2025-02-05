@@ -8,7 +8,8 @@ import BarChart from '../component/BarChart';
 
 export default function BusinessUpdate() {
 	const data = useSelector((state: any) => state.excelData.excelDataArray);
-	const bussinessQuarter = data?.titles?.bussinessQuarter;
+	// const bussinessQuarter = JSON.stringify(data?.titles);
+	const bussinessQuarter = data?.titles?.bussinessQuarterTitle;
 	const chargeability = data.qtdChargebility;
 	const fr = data.qtdFr;
 

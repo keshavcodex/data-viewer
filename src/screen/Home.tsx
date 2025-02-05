@@ -25,8 +25,8 @@ export default function Home() {
 	return (
 		<ThemeProvider theme={theme}>
 			<Box>
-				<Navbar />
 				{isDevMode ? <DevMode /> : <DataViewer />}
+				<Navbar />
 			</Box>
 		</ThemeProvider>
 	);
