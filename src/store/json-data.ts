@@ -1,6 +1,6 @@
 export const jsonDataTemp = {
     titles: {
-        bussinessQuarterTitle: 'Q2 FY25 Performance'
+        bussinessQuarterTitle: 'Q2 FY25'
     },
 	ratio: {
 		diversity: 43.3,

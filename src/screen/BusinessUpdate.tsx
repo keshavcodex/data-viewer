@@ -8,15 +8,14 @@ import BarChart from '../component/BarChart';
 
 export default function BusinessUpdate() {
 	const data = useSelector((state: any) => state.excelData.excelDataArray);
-	// const bussinessQuarter = JSON.stringify(data?.titles);
 	const bussinessQuarter = data?.titles?.bussinessQuarterTitle;
 	const chargeability = data.qtdChargebility;
 	const fr = data.qtdFr;
 
 	return (
 		<Box>
-			<Typography variant='h4' align='center' bgcolor={'#d1acfa'} mb={2} py={1}>
-				Business Update CNR | {bussinessQuarter}
+			<Typography variant='h4' align='center' bgcolor={'#d1acfa'} mb={1} py={1}>
+				Business Update CNR | {bussinessQuarter} Performance
 			</Typography>
 			<Box
 				sx={{
@@ -105,7 +104,7 @@ export default function BusinessUpdate() {
 						>
 							Head Count
 						</Typography>
-						<BarChart data={data.headCount} />
+						<BarChart data={data?.headCount} />
 					</Box>
 				</Box>
 			</Box>

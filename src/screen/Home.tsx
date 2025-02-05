@@ -13,11 +13,12 @@ export default function Home() {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		// localStorage.setItem('excelData', JSON.stringify(jsonDataTemp));
 		const getLocalData = localStorage.getItem('excelData');
 		if (getLocalData) {
 			const excelData = JSON.parse(getLocalData);
 			dispatch(setExcelData(excelData));
+		} else {
+			localStorage.setItem('excelData', JSON.stringify(jsonDataTemp));
 		}
 		// eslint-disable-next-line
 	}, []);

@@ -14,7 +14,7 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
   const values = sortedData.map(([, value]) => value);
 
   // Calculate total count
-  const totalCount = values.reduce((sum, value) => sum + value, 0);
+  const totalCount = values.reduce((sum, value) => sum + Number(value), 0);
 
   const option = {
     title: {

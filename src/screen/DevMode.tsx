@@ -153,14 +153,14 @@ export default function DevMode() {
 					Save Changes
 				</Button>
 			</Box>
-			{/* {jsonData && (
+			{jsonData && (
 				<Box sx={{ mt: 2, p: 2, bgcolor: '#f5f5f5', borderRadius: 2 }}>
 					<Typography variant='body1'>JSON Output:</Typography>
 					<pre style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
 						{JSON.stringify(jsonData, null, 2)}
 					</pre>
 				</Box>
-			)} */}
+			)}
 		</Box>
 	);
 }

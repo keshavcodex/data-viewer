@@ -5,12 +5,14 @@ import { setExcelData } from '../store/store';
 import { jsonDataTemp } from '../store/json-data';
 
 import BusinessUpdate from './BusinessUpdate';
+import UtilizationUpdate from './UtilizationUpdate';
 
 export default function DataViewer() {
 
 	return (
 		<Box>
             <BusinessUpdate />
+			<UtilizationUpdate />
 		</Box>
 	);
 }

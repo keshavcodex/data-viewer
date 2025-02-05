@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const devModeSlice = createSlice({
 	name: 'devMode',
 	initialState: {
-		isDevMode: true
+		isDevMode: false
 	},
 	reducers: {
 		toggleDevMode(state) {
