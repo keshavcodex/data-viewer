@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import * as XLSX from 'xlsx';
-import { Button, Typography, Box, TextField } from '@mui/material';
+import { useEffect, useState } from 'react';
+import { Button, Typography, Box } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { setExcelData } from '../store/store';
-import DeleteIcon from '@mui/icons-material/Delete';
 import Input from '@mui/material/Input';
 import { toTitleCase } from '../util/caseConverter';
 

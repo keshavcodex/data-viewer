@@ -1,9 +1,7 @@
 import { Box, Typography } from '@mui/material';
-import { jsonDataTemp } from '../store/json-data';
 import { LineRaceChart } from '../component/LineRaceChart';
 import { useSelector } from 'react-redux';
 import { DonutChart } from '../component/DonutChart';
-import GroupsIcon from '@mui/icons-material/Groups';
 import BarChart from '../component/BarChart';
 
 export default function BusinessUpdate() {
